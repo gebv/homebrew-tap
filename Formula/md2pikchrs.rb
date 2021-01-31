@@ -11,7 +11,7 @@ class Md2pikchrs < Formula
 
   if OS.mac?
     url "https://github.com/gebv/pikchr/releases/download/v1.0.1/pikchr_Darwin_x86_64.tar.gz"
-    sha256 "049a8e9401ceb45ac6f7da8bd344e0f9e80021ea3d3a331f9e5b5051c0cbd736"
+    sha256 "7a939c469997f7440a6c9acb1fce7476ea52dea4164ab9f6933d14f2dfb41d64"
   end
 
   def install
