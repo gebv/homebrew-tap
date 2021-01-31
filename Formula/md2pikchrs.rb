@@ -5,13 +5,13 @@
 class Md2pikchrs < Formula
   desc "cli tools to integrate into your development process for generate pikchrs diagrams"
   homepage "https://github.com/gebv/pikchr"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gebv/pikchr/releases/download/v1.0.1/pikchr_Darwin_x86_64.tar.gz"
-    sha256 "6a1fcec96546312d67ce22c97d2b0bb59f4932786b13f5bc44827c26dbdda8b0"
+    url "https://github.com/gebv/pikchr/releases/download/v1.0.2/pikchr_Darwin_x86_64.tar.gz"
+    sha256 "edc7b24d63a518783178ed8f8ad4c634e87bad4e41ac5dfd156e0bd35dfab31f"
   end
 
   def install
