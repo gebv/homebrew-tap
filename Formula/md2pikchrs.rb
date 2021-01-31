@@ -11,11 +11,11 @@ class Md2pikchrs < Formula
 
   if OS.mac?
     url "https://github.com/gebv/pikchr/releases/download/v1.0.1/pikchr_Darwin_x86_64.tar.gz"
-    sha256 "7a939c469997f7440a6c9acb1fce7476ea52dea4164ab9f6933d14f2dfb41d64"
+    sha256 "6a1fcec96546312d67ce22c97d2b0bb59f4932786b13f5bc44827c26dbdda8b0"
   end
 
   def install
-    bin.install "pikchr"
+    bin.install "md2pikchrs"
   end
 
   test do
