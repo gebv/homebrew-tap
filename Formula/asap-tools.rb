@@ -5,21 +5,21 @@
 class AsapTools < Formula
   desc "The asap-tools it is collection of tools to simplify daily monotonous monotonous cases. For syncing tasks between ClickUp teams and more."
   homepage "https://github.com/gebv/asap-tools"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/gebv/asap-tools/releases/download/v0.0.6/asap-tools_Darwin_arm64.zip"
-      sha256 "6c8083548aaf50af231408e45a972e468dde0ecfc81b8da5d7c82e40f4b318da"
+    if Hardware::CPU.intel?
+      url "https://github.com/gebv/asap-tools/releases/download/v0.0.7/asap-tools_Darwin_x86_64.zip"
+      sha256 "5b41ec1229c695d950c42e626b68a34ad9418ecb4386dc511937be4aec60465e"
 
       def install
         bin.install "asap-tools"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/gebv/asap-tools/releases/download/v0.0.6/asap-tools_Darwin_x86_64.zip"
-      sha256 "dd1ef9575c6c7d56b03d13197bb6e34c433d2ac60dd0523bbacc26c35f3558fa"
+    if Hardware::CPU.arm?
+      url "https://github.com/gebv/asap-tools/releases/download/v0.0.7/asap-tools_Darwin_arm64.zip"
+      sha256 "8ab952dbbd8a80946af0405d6be415a5a6e0249e50e615082318ef520ba80e30"
 
       def install
         bin.install "asap-tools"
@@ -29,24 +29,24 @@ class AsapTools < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gebv/asap-tools/releases/download/v0.0.6/asap-tools_Linux_arm64.zip"
-      sha256 "e069b9604a96a30ac3b38c5c49fa45688f80705def8c2dc537d8285af88e96cb"
-
-      def install
-        bin.install "asap-tools"
-      end
-    end
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gebv/asap-tools/releases/download/v0.0.6/asap-tools_Linux_armv6.zip"
-      sha256 "558a3444bb1ca5431a5d74d5e95a3072bcfaf7095ff6deb521aae52972e5edb2"
+      url "https://github.com/gebv/asap-tools/releases/download/v0.0.7/asap-tools_Linux_arm64.zip"
+      sha256 "84e56ff2d498c9583c7e01c3de5d91012672e05849889991f6063f9796dc67d4"
 
       def install
         bin.install "asap-tools"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gebv/asap-tools/releases/download/v0.0.6/asap-tools_Linux_x86_64.zip"
-      sha256 "ccce390e2f65f79bd2232bdf586c114c46f1c060b02a5cb01629c05a894a53b0"
+      url "https://github.com/gebv/asap-tools/releases/download/v0.0.7/asap-tools_Linux_x86_64.zip"
+      sha256 "67ccec10cd904051a4373ff84a10e7d269716b21e70417869903e536b0d2d90e"
+
+      def install
+        bin.install "asap-tools"
+      end
+    end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/gebv/asap-tools/releases/download/v0.0.7/asap-tools_Linux_armv6.zip"
+      sha256 "d91c283ed9fb554f7fe3ce244b5172c24c0dec94bbfb25eeda6055bb3fa559eb"
 
       def install
         bin.install "asap-tools"
